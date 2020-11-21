@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="61px" height="61px" viewbox="0 0 61 61" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group" transform="translate(0.5 0.5)">
+    <path d="M0 0L2.99501 0L2.99501 52.9992L0 52.9992L0 0Z" transform="translate(0 6.961731)" id="Rectangle" fill="#EA6118" fill-rule="evenodd" stroke="#EA6118" stroke-width="1" />
+    <path d="M0 0L49.9168 0L49.9168 2.99995L0 2.99995L0 0Z" transform="translate(2.9950085 56.960876)" id="Rectangle-2" fill="#EA6118" fill-rule="evenodd" stroke="#EA6118" stroke-width="1" />
+    <path d="M0.00231934 0.141088L48.8483 0L48.4948 3.18198L0 2.96706L0.00104523 1.55415L0.00231934 0.141088Z" transform="matrix(0.70710677 -0.70710677 0.70710677 0.70710677 22.959023 35.001854)" id="Rectangle-3" fill="#EA6118" fill-rule="evenodd" stroke="#EA6118" stroke-width="1" />
+    <path d="M0 0L27.9534 0L27.9534 2.99996L0 2.99996L0 0Z" transform="translate(32.046585 0)" id="Rectangle-4" fill="#EA6118" fill-rule="evenodd" stroke="#EA6118" stroke-width="1" />
+    <path d="M0 0L2.99501 0L2.99501 27.9996L0 27.9996L0 0Z" transform="translate(57.00499 0.96087646)" id="Rectangle-5" fill="#EA6118" fill-rule="evenodd" stroke="#EA6118" stroke-width="1" />
+    <path d="M0 0L16.9717 0L16.9717 2.99996L0 2.99996L0 0Z" transform="translate(2.9950104 6.9609375)" id="Rectangle-6" fill="#EA6118" fill-rule="evenodd" stroke="#EA6118" stroke-width="1" />
+    <path d="M0 0L2.99501 0L2.99501 17L0 17L0 0Z" transform="translate(49.9168 40.16089)" id="Rectangle-7" fill="#EA6118" fill-rule="evenodd" stroke="#EA6118" stroke-width="1" />
+  </g>
+</svg>
