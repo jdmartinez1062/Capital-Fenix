@@ -1,4 +1,4 @@
-window.onload = function () {
+
   console.log("loaded")
   var enter = function (e) {
     var e = e || window.event, el = e.target || el.srcElement;
@@ -22,16 +22,16 @@ window.onload = function () {
     }
   };
 
-  objects = Array.from(document.getElementsByClassName('detail'));
-  console.log(objects)
-  console.log(objects[0].id)
+  let objects1 = Array.from(document.getElementsByClassName('detail'));
+  console.log(objects1)
+  console.log(objects1[0].id)
 
-  for (var i = 0; i < objects.length; i++) {
-
-    document.getElementById(objects[i].id).addEventListener("mouseenter", enter)
-    document.getElementById(objects[i].id).addEventListener("mouseleave", out)
+  for (var i = 0; i < objects1.length; i++) {
+    console.log(objects1[i])
+    document.getElementById(objects1[i].id).addEventListener("mouseenter", enter)
+    document.getElementById(objects1[i].id).addEventListener("mouseleave", out)
   }
-};
+
 
 
 

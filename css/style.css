@@ -1,31 +1,31 @@
 @font-face {
-  font-family: 'Source Sans 3';
+  font-family: "Source Sans 3";
   font-weight: 200 900;
   font-style: normal;
   font-stretch: normal;
-  src: url('SourceSans3VF-Roman.ttf.woff2') format('woff2');
+  src: url("SourceSans3VF-Roman.ttf.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Dosis';
+  font-family: "Dosis";
   font-weight: 200 900;
   font-style: normal;
   font-stretch: normal;
-  src: url('Dosis-VariableFont_wght.ttf') format('truetype');
+  src: url("Dosis-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Spartan';
+  font-family: "Spartan";
   font-weight: 200 900;
   font-style: normal;
   font-stretch: normal;
-  src: url('Spartan-VariableFont_wght.ttf') format('truetype');
+  src: url("Spartan-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Monserrat';
+  font-family: "Monserrat";
   font-weight: 400;
-  src: url('Montserrat-Medium.ttf')  format('truetype');
+  src: url("Montserrat-Medium.ttf") format("truetype");
 }
 
 .dark-bg {
@@ -38,45 +38,46 @@ html {
 }
 
 body {
-  font: 'Dosis', sans-serif;
+  font: "Dosis", sans-serif;
   background-color: #1b1b1e;
   width: 100%;
 }
 
 .main-centered {
   position: relative;
-  width: calc(564 / 1440 * 100%);
+  width: 45%;
   margin-left: calc(470 / 1440 * 100%);
   margin-top: 15%;
 }
 
 h1 {
-  font-family: 'Source Sans 3', 'Dosis', Arial, Helvetica, sans-serif;
+  font-family: "Monserrat", "Dosis", Arial, Helvetica, sans-serif;
 }
 
 .dark-bg .number {
-  font: 200 7rem 'Dosis', sans-serif;
+  font: 200 7rem "Dosis", sans-serif;
   color: #fff;
   opacity: 0.2;
 }
 
 .introduction {
-  margin: 5.8rem 0 0 0;
+  margin: 5.6rem 0 0 0;
 }
 
 .dark-bg h1 {
-  font: 400 5.6rem 'Spartan', sans-serif;
+  font: 300 6.5rem "Source Sans 3", sans-serif;
+  text-transform: uppercase;
   color: #fff;
 }
 
 .dark-bg p {
-  font: 400 1.2rem  'Source Sans 3', sans-serif;
+  font: 400 1.4rem "Dosis", sans-serif;
   color: #fff;
 }
 
 a.orange,
 p.orange {
-  color: #ea6118;
+  color: #c41f08;
   display: block;
 }
 
@@ -89,7 +90,7 @@ span.vector1 {
 
 .square-decoration {
   position: absolute;
-  background-color: #ea6118;
+  background-color: #c41f08;
   height: 94px;
   width: 94px;
   left: 85%;
@@ -310,12 +311,12 @@ div.square:nth-child(4) div.vector {
 
 div.about-info h4 {
   color: #fff;
-  font: 400 1.5rem 'Spartan', sans-serif;
+  font: 400 1.5rem "Spartan", sans-serif;
 }
 
 div.about-info ul li {
   color: #7d7c84;
-  font: 400 1.2rem 'Source Sans 3', sans-serif;
+  font: 400 1.2rem "Source Sans 3", sans-serif;
 }
 
 section.about-me {
@@ -338,15 +339,15 @@ a.link-icon {
 
 div.back-tech div p {
   display: block;
-  color: #ea6118;
+  color: #c41f08;
   opacity: 1;
-  font: 400 1.2rem 'Source Sans 3', sans-serif;
+  font: 400 1.2rem "Source Sans 3", sans-serif;
   margin: 0;
   padding: 0 0.5rem;
 }
 
 p.project-description {
-  font: 400 1.2rem 'Source Sans 3', sans-serif;
+  font: 400 1.2rem "Source Sans 3", sans-serif;
   color: #fff;
   margin: 2rem;
 }
@@ -381,7 +382,7 @@ p.project-description {
 
 a.icon {
   display: block;
-  color: #ea6118;
+  color: #c41f08;
   width: 130px;
 }
 
@@ -413,7 +414,7 @@ footer.dark-bg a.link-icon {
 
 footer h2 {
   color: #fff;
-  font: 400 2.5rem 'Source Sans 3', sans-serif;
+  font: 400 2.5rem "Source Sans 3", sans-serif;
   margin: 2.5rem 0 0 0;
 }
 
@@ -613,11 +614,11 @@ footer {
   }
 
   div.about-info h4 {
-    font: 400 0.8rem 'Spartan', sans-serif;
+    font: 400 0.8rem "Spartan", sans-serif;
   }
 
   div.about-info ul li {
-    font: 400 0.6rem 'Source Sans 3', sans-serif;
+    font: 400 0.6rem "Source Sans 3", sans-serif;
   }
 
   div.vector {
@@ -629,11 +630,11 @@ footer {
   }
 
   .dark-bg p {
-    font: 400 0.6rem 'Source Sans 3', sans-serif;
+    font: 400 0.6rem "Source Sans 3", sans-serif;
   }
 
   .dark-bg h1 {
-    font: 400 2.8rem 'Spartan', sans-serif;
+    font: 400 2.8rem "Spartan", sans-serif;
   }
 
   a.link-icon {
@@ -662,7 +663,7 @@ footer {
   }
 
   .dark-bg .number {
-    font: 200 4.5rem 'Dosis', sans-serif;
+    font: 200 4.5rem "Dosis", sans-serif;
     color: #fff;
     opacity: 0.2;
   }
@@ -674,7 +675,7 @@ footer {
 
   footer h2 {
     color: #fff;
-    font: 400 1.25rem 'Source Sans 3', sans-serif;
+    font: 400 1.25rem "Source Sans 3", sans-serif;
     margin: 0.7rem 0 0 0;
   }
 
