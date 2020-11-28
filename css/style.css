@@ -52,6 +52,7 @@ body {
 
 h1 {
   font-family: "Monserrat", "Dosis", Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 .dark-bg .number {
@@ -118,7 +119,25 @@ footer div.social-media a {
 div.social-media a:first-child {
   margin-left: 17px;
 }
-
+#particle-canvas {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+}
+#canvas {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+}
+#logo {
+  position: absolute;
+  width: 30%;
+  top: 50%;
+  left: -12%;
+  transform: translate(-30%, -50%);
+}
 .vert-stripes {
   position: absolute;
   width: 300%;
@@ -167,26 +186,27 @@ div.social-media a:first-child {
   flex-wrap: wrap;
 }
 
-div.capstone {
-  flex: 1 1 100%;
+div.sheet-rock {
+  flex: 1 1 50%;
 }
 
-div.social {
-  flex: 1 1 calc(44736 / 89101 * 100%);
+div.steel-framing {
+  flex: 1 1 50%;
 }
 
-div.TNW {
-  flex: 1 1 calc(44365 / 89101 * 100%);
+div.painting {
+  flex: 1 1 34.878892733564%;
 }
 
-div.tic-tac-toe {
-  flex: 1 1 calc(37304 / 131713 * 100%);
+div.popcorn-removal {
+  flex: 1 1 65.121107266436%;
 }
-
-div.newsweek {
-  flex: 1 1 calc(94400 / 131713 * 100%);
+div.floor {
+  flex: 1 1 64%;
 }
-
+div.finishing {
+  flex: 1 1 36%;
+}
 div.back-tech div {
   background-color: rgba(234, 97, 24, 0.2);
   margin: 0.5rem;
@@ -215,55 +235,74 @@ div.capstone-mobile {
   background-repeat: no-repeat;
 }
 
-div.social div.project {
-  padding-top: calc(934 / 1920 * 100%);
+div.sheet-rock div.project {
+  padding-top: 133.3333333%;
   position: relative;
   height: auto;
   width: 100%;
-  background-image: url("../images/social.jpg");
+  background-image: url("../images/Projects/drywall.jpeg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-div.TNW div.project {
+div.steel-framing div.project {
   width: 100%;
-  padding-top: calc(934 / 1920 * 100%);
+  padding-top: 133.3333333%;
   position: relative;
   height: auto;
-  background-image: url("../images/TNW.jpg");
+  background-image: url("../images/Projects/steel-framing2.jpeg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-div.tic-tac-toe div.project {
-  padding-top: calc(492 / 386 * 100%);
+div.painting div.project {
+  padding-top: 203.1746031746%;
   width: 100%;
   position: relative;
   height: auto;
-  background-image: url("../images/tic-tac-toe.jpg");
+  background-image: url("../images/Projects/painting.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-div.newsweek div.project {
-  padding-top: calc(965 / 1920 * 100%);
+div.popcorn-removal div.project {
+  padding-top: 108.82040382572%;
   width: 100%;
   position: relative;
   height: auto;
-  background-image: url("../images/newsweek.jpg");
+  background-image: url("../images/Projects/popcorn.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+div.floor div.project {
+  padding-top: 75%;
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-image: url("../images/Projects/flooring.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+div.finishing div.project {
+  padding-top: 133.333333%;
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-image: url("../images/Projects/finishing.jpeg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 h2.project {
+  font: 400 3rem "Source Sans 3", sans-serif;
   display: block;
   color: #fff;
 }
 
 div.right-centered {
   position: relative;
-  width: calc(474 / 1440 * 100%);
-  left: calc(211 / 1440 * 100%);
+  width: 40%;
+  left: 37.6%;
 }
 
 div.squares {
@@ -282,9 +321,9 @@ div.square {
 }
 
 div.vector {
-  width: calc(48 / 245 * 100%);
-  padding-top: calc(48 / 245 * 100%);
-  margin: 1.8rem;
+  width: 5.6rem;
+  padding-top: 5.6rem;
+  margin: 1.8rem 1.8rem 1.8rem 0;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -347,7 +386,7 @@ div.back-tech div p {
 }
 
 p.project-description {
-  font: 400 1.2rem "Source Sans 3", sans-serif;
+  font: 300 1.4rem "Dosis", sans-serif;
   color: #fff;
   margin: 2rem;
 }
@@ -419,19 +458,51 @@ footer h2 {
 }
 
 footer div.left-centered {
-  padding: 5% 0 5% 0;
-  left: calc(242 / 1440 * 100%);
+  padding: 5% 0 2% 0;
+  left: 11.58696794535%;
+  width: 50%;
 }
-
+footer .introduction {
+  width: 100%;
+}
+.contact {
+  width: 30%;
+  margin: 0 40px;
+  background-color: rgba(0, 0, 0, 0.466);
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.25);
+}
+footer .contact {
+  width: 30%;
+  margin: 0 40px;
+  background-color: #1b1b1e;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.25);
+}
+footer .contact > div {
+  margin: 2rem;
+}
+footer .contact h4 {
+  display: block;
+  color: #fff;
+  margin-bottom: 2rem;
+}
 footer {
   padding-bottom: 2%;
 }
-
-#about-me {
-  order: 2;
+#services {
+  background-image: url(../icons/gear.svg);
 }
-
-#skills {
+#contact {
+  background-image: url(../icons/lightbulb.svg);
+}
+#project-wrapper {
+  margin-top: 2%;
+  order: 3;
+  width: 80%;
+}
+#project-wrapper > div {
+  padding: 7px;
+}
+#about-me {
   order: 1;
 }
 
