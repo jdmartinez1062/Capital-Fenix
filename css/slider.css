@@ -1,7 +1,10 @@
+.slider-wrapper {
+  width: 40%;
+}
 .slider-container {
   position: relative;
   overflow: hidden;
-  width: 40%;
+  width: 100%;
   margin: 0 13px;
 }
 .slider-container figure {
@@ -12,12 +15,7 @@
   position: relative;
   width: 100%;
 }
-#figure-p1 {
-  background-image: url("../images/Projects/steel-framing2.jpeg");
-}
-#figure-p2 {
-  background-image: url("../images/Projects/finishing.jpeg");
-}
+
 .compare {
   background-size: cover;
   bottom: 0;
@@ -30,30 +28,75 @@
   position: absolute;
   width: 50%;
 }
+
+#figure-p1 {
+  background-image: url("../images/Projects/steel-framing2.jpeg");
+}
+
+#figure-p2 {
+  background-image: url("../images/Projects/p7a.jpeg");
+}
+
+#figure-p3 {
+  background-image: url("../images/Projects/steel-framing2.jpeg");
+}
+
+#figure-p4 {
+  background-image: url("../images/Projects/finishing.jpeg");
+}
+
 #compare-p1 {
-  background-image: url("../images/Projects/drywall.jpeg");
+  background-image: url("../images/Projects/p1.jpeg");
 }
+
 #compare-p2 {
+  background-image: url("../images/Projects/p7.jpeg");
+}
+
+#compare-p3 {
   background-image: url("../images/Projects/drywall.jpeg");
 }
+
+#compare-p4 {
+  background-image: url("../images/Projects/drywall.jpeg");
+}
+
 input.slider {
   -moz-appearance: none;
   -webkit-appearance: none;
   border: none;
   background: transparent;
   cursor: col-resize;
-  height: 51.7vw;
   left: 0;
   margin: 0;
   outline: none;
   padding: 0;
   position: relative;
-  top: -51.7vw;
   width: 100%;
 }
+
+#slider-p1 {
+  height: 60.7vw;
+  top: -60.7vw;
+}
+
+#slider-p2 {
+  height: 51.7vw;
+  top: -51.7vw;
+}
+#slider-p3 {
+  height: 51.7vw;
+  top: -51.7vw;
+}
+#slider-p4 {
+  height: 51.7vw;
+  top: -51.7vw;
+}
+
 input.slider::-moz-range-track {
   background: transparent;
 }
+
 input.slider::-ms-track {
   border: none;
   background-color: transparent;
@@ -68,29 +111,35 @@ input.slider::-ms-track {
   cursor: col-resize;
   color: transparent;
 }
+
 input.slider::-ms-fill-lower {
   background-color: transparent;
 }
+
 input.slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 66vw;
   width: 0.5%;
   opacity: 0;
 }
+
 input.slider::-moz-range-thumb {
   -moz-appearance: none;
   height: 66vw;
   width: 0.5%;
   opacity: 0;
 }
+
 input.slider::-ms-thumb {
   height: 66vw;
   width: 0.5%;
   opacity: 0;
 }
+
 input.slider::-ms-tooltip {
   display: none;
 }
+
 /* .compare::before {
   background: url(https://webdevtrick.com/wp-content/uploads/comparision.png)
     no-repeat scroll 0 center transparent;
