@@ -1,12 +1,14 @@
 .slider-wrapper {
   width: 40%;
 }
+
 .slider-container {
   position: relative;
   overflow: hidden;
   width: 100%;
   margin: 0 13px;
 }
+
 .slider-container figure {
   background-size: contain;
   font-size: 0;
@@ -84,10 +86,12 @@ input.slider {
   height: 51.7vw;
   top: -51.7vw;
 }
+
 #slider-p3 {
   height: 51.7vw;
   top: -51.7vw;
 }
+
 #slider-p4 {
   height: 51.7vw;
   top: -51.7vw;
@@ -138,39 +142,4 @@ input.slider::-ms-thumb {
 
 input.slider::-ms-tooltip {
   display: none;
-}
-
-/* .compare::before {
-  background: url(https://webdevtrick.com/wp-content/uploads/comparision.png)
-    no-repeat scroll 0 center transparent;
-  background-size: contain;
-  content: " ";
-  float: right;
-  height: 100%;
-  margin-right: -34px;
-  position: relative;
-  top: 0;
-  width: 64px;
-} */
-@keyframes first {
-  0% {
-    width: 0%;
-  }
-  50% {
-    width: 80%;
-  }
-  100% {
-    width: 50%;
-  }
-}
-@-webkit-keyframes first {
-  0% {
-    width: 0%;
-  }
-  50% {
-    width: 80%;
-  }
-  100% {
-    width: 50%;
-  }
 }

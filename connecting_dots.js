@@ -24,7 +24,7 @@
   }, b.prototype.update = function () { this.g.clearRect(0, 0, this.canvas.width, this.canvas.height), this.g.globalAlpha = 1; for (let a = 0; a < this.o.length; a++) { this.o[a].update(), this.o[a].h(); for (let b = this.o.length - 1; b > a; b--) { const c = Math.sqrt(Math.pow(this.o[a].x - this.o[b].x, 2) + Math.pow(this.o[a].y - this.o[b].y, 2)); c > 120 || (this.g.beginPath(), this.g.strokeStyle = this.options.particleColor, this.g.globalAlpha = (120 - c) / 120, this.g.lineWidth = 0.7, this.g.moveTo(this.o[a].x, this.o[a].y), this.g.lineTo(this.o[b].x, this.o[b].y), this.g.stroke()); } } this.options.velocity !== 0 && requestAnimationFrame(this.update.bind(this)); }, b.prototype.setVelocity = function (a) { return a === 'fast' ? 1 : a === 'slow' ? 0.33 : a === 'none' ? 0 : 0.66; }, b.prototype.j = function (a) { return a === 'high' ? 5e3 : a === 'low' ? 2e4 : isNaN(parseInt(a, 10)) ? 1e4 : a; }, b.prototype.l = function (a, b) { for (const c in b) a.style[c] = b[c]; }, b;
 }));
 
-// Initialisation
+// Initialization
 
 const canvasDiv = document.getElementById('particle-canvas');
 const options = {

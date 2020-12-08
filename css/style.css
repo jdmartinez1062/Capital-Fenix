@@ -1,6 +1,5 @@
 @font-face {
   font-family: "Source Sans 3";
-  font-weight: 200 900;
   font-style: normal;
   font-stretch: normal;
   src: url("SourceSans3VF-Roman.ttf.woff2") format("woff2");
@@ -8,7 +7,6 @@
 
 @font-face {
   font-family: "Dosis";
-  font-weight: 200 900;
   font-style: normal;
   font-stretch: normal;
   src: url("Dosis-VariableFont_wght.ttf") format("truetype");
@@ -16,7 +14,6 @@
 
 @font-face {
   font-family: "Spartan";
-  font-weight: 200 900;
   font-style: normal;
   font-stretch: normal;
   src: url("Spartan-VariableFont_wght.ttf") format("truetype");
@@ -38,7 +35,6 @@ html {
 }
 
 body {
-  font: "Dosis", sans-serif;
   background-color: #1b1b1e;
   width: 100%;
 }
@@ -119,6 +115,7 @@ footer div.social-media a {
 div.social-media a:first-child {
   margin-left: 17px;
 }
+
 #particle-canvas {
   width: 100%;
   height: 100%;
@@ -126,18 +123,13 @@ div.social-media a:first-child {
   top: 0;
   z-index: 0;
 }
+
 #canvas {
   width: 100%;
   height: 100%;
   position: fixed !important;
-  top: 2;
 }
-#canvas {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-}
+
 #logo {
   position: absolute;
   width: 30%;
@@ -174,15 +166,22 @@ div.painting {
 div.popcorn-removal {
   flex: 1 1 65.121107266436%;
 }
+
 div.floor {
   flex: 1 1 64%;
 }
+
 div.finishing {
   flex: 1 1 36%;
 }
+
 div.back-tech div {
   background-color: rgba(234, 97, 24, 0.2);
   margin: 0.5rem;
+}
+
+footer .contact > div {
+  margin: 2rem;
 }
 
 .capstone > div:nth-child(2),
@@ -247,6 +246,7 @@ div.popcorn-removal div.project {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 div.floor div.project {
   padding-top: 75%;
   width: 100%;
@@ -256,6 +256,7 @@ div.floor div.project {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 div.finishing div.project {
   padding-top: 133.333333%;
   width: 100%;
@@ -370,7 +371,6 @@ p.project-description {
   top: 0;
   background-color: rgba(27, 27, 30, 0.95);
   z-index: 3;
-  transition: all 0.3;
 }
 
 .hide-detail {
@@ -437,46 +437,53 @@ footer div.left-centered {
   width: 50%;
   min-width: 900px;
 }
+
 footer .introduction {
   width: 80%;
 }
+
 .contact {
   width: 30%;
   margin: 0 40px;
   background-color: rgba(0, 0, 0, 0.466);
   box-shadow: 0 2px 24px rgba(0, 0, 0, 0.25);
 }
+
 footer .contact {
   width: 30%;
   margin: 0 40px;
   background-color: #1b1b1e;
   box-shadow: 0 2px 24px rgba(0, 0, 0, 0.25);
 }
-footer .contact > div {
-  margin: 2rem;
-}
+
 footer .contact h4 {
   display: block;
   color: #fff;
   margin-bottom: 2rem;
 }
+
 footer {
   padding-bottom: 2%;
 }
+
 #services {
   background-image: url(../icons/gear.svg);
 }
+
 #contact {
   background-image: url(../icons/lightbulb.svg);
 }
+
 #project-wrapper {
   margin-top: 2%;
   order: 3;
   width: 80%;
 }
+
 #project-wrapper > div {
   padding: 7px;
 }
+
 #about-me {
   order: 1;
 }
@@ -499,6 +506,7 @@ footer {
     left: 0;
     margin: 0 5%;
   }
+
   #logo {
     position: absolute;
     width: 30%;
@@ -506,9 +514,11 @@ footer {
     left: -12%;
     transform: translate(-30%, -50%);
   }
+
   footer .introduction {
     width: 100%;
   }
+
   footer div.left-centered {
     left: 0;
     padding: 0 2%;
@@ -519,14 +529,12 @@ footer {
 }
 
 @media screen and (max-width: 1170px) {
-  #skills {
-    width: fit-content;
-  }
   .main-centered {
     left: 15%;
     margin: 2.5% 5% 0 5%;
     width: 80%;
   }
+
   #logo {
     position: absolute;
     width: 30%;
@@ -534,6 +542,7 @@ footer {
     left: -12%;
     transform: translate(-30%, -50%);
   }
+
   .left-centered {
     left: 0;
     margin: 0 2.5%;
@@ -543,9 +552,11 @@ footer {
     left: 0;
     margin: 0 2.5%;
   }
+
   .dark-bg h1 {
     font-size: 5rem;
   }
+
   footer div.left-centered {
     left: 0;
     padding: 0 2%;
@@ -553,9 +564,11 @@ footer {
     min-width: auto;
     margin-right: 0;
   }
+
   footer .contact h4 {
     font-size: 1.4rem;
   }
+
   footer div.contact p {
     font-size: 1rem;
   }
@@ -619,6 +632,7 @@ footer {
   div.floor {
     flex: 1 1 100%;
   }
+
   div.finishing {
     flex: 1 1 100%;
   }
@@ -662,7 +676,6 @@ footer {
   .dark-bg p {
     font-size: 0.6rem;
     line-break: normal;
-    width: fit-content;
   }
 
   .dark-bg h1 {
@@ -712,13 +725,14 @@ footer {
     position: relative;
     left: -3.7rem;
   }
+
   div.vector {
     min-width: 51.2px;
-
     width: 3.2rem;
     padding-top: 3.2rem;
     margin: 0 0.5rem 0.5rem 0;
   }
+
   footer h2 {
     color: #fff;
     font: 400 1.25rem "Source Sans 3", sans-serif;
@@ -759,34 +773,39 @@ footer {
   footer.dark-bg {
     padding-bottom: 20px;
   }
+
   footer .introduction {
     width: 80%;
   }
-  footer .contact {
-    width: 50%;
-  }
+
   footer .contact {
     width: 70%;
     margin: 0.8rem 0;
   }
+
   footer .contact > div {
     margin: 1.5rem;
   }
 }
+
 @media screen and (max-width: 320px) {
   .dark-bg h1 {
     font-size: 2.5rem;
   }
+
   footer .introduction {
     width: 60%;
   }
+
   footer .contact h4 {
     font-size: 1rem;
   }
+
   footer .contact {
     width: 85%;
     margin: 0.5rem 0;
   }
+
   footer .contact > div {
     margin: 1rem;
   }
