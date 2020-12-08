@@ -623,11 +623,6 @@ footer {
     flex: 1 1 100%;
   }
 
-  .main-centered {
-    left: 0;
-    margin: 2.5% 2.5% 0 2.5%;
-  }
-
   .left-centered {
     left: 0;
     margin: 0 2.5%;
@@ -772,6 +767,7 @@ footer {
   }
   footer .contact {
     width: 70%;
+    margin: 0.8rem 0;
   }
   footer .contact > div {
     margin: 1.5rem;
@@ -789,6 +785,7 @@ footer {
   }
   footer .contact {
     width: 85%;
+    margin: 0.5rem 0;
   }
   footer .contact > div {
     margin: 1rem;
