@@ -1,5 +1,6 @@
 .slider-wrapper {
   width: 40%;
+  margin: 1rem 0;
 }
 
 .slider-container {
@@ -54,11 +55,11 @@
 }
 
 #figure-p3 {
-  background-image: url("../images/Projects/p7a.jpeg");
+  background-image: url("../images/Projects/p3a.jpeg");
 }
 
 #figure-p4 {
-  background-image: url("../images/Projects/finishing.jpeg");
+  background-image: url("../images/Projects/p5a.jpeg");
 }
 
 #compare-p1 {
@@ -70,11 +71,11 @@
 }
 
 #compare-p3 {
-  background-image: url("../images/Projects/p7.jpeg");
+  background-image: url("../images/Projects/p3.jpeg");
 }
 
 #compare-p4 {
-  background-image: url("../images/Projects/drywall.jpeg");
+  background-image: url("../images/Projects/p4.jpeg");
 }
 
 input.slider {
@@ -197,6 +198,9 @@ input.slider::-ms-tooltip {
   .compare {
     border-right: 0.5px solid rgba(255, 255, 255, 0.7);
   }
+  .slider-wrapper {
+    margin: 0.8rem 0;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -213,5 +217,9 @@ input.slider::-ms-tooltip {
   }
   .compare {
     border-right: 0.5px solid rgba(255, 255, 255, 0.7);
+  }
+
+  .slider-wrapper {
+    margin: 0.8rem 0;
   }
 }
