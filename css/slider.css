@@ -10,7 +10,7 @@
 }
 
 .slider-container figure {
-  background-size: contain;
+  background-size: cover;
   font-size: 0;
   height: 100%;
   margin: 0;
@@ -29,18 +29,32 @@
   overflow: visible;
   position: absolute;
   width: 50%;
+  animation: first 2s 1 normal ease-in-out 0.1s;
+  -webkit-animation: first 2s 1 normal ease-in-out 0.1s;
+}
+
+.compare::before {
+  background: url(../icons/arrows.svg) no-repeat scroll 0 center transparent;
+  background-size: contain;
+  content: " ";
+  float: right;
+  height: 100%;
+  margin-right: -66.5px;
+  position: relative;
+  top: 0;
+  width: 130px;
 }
 
 #figure-p1 {
-  background-image: url("../images/Projects/steel-framing2.jpeg");
+  background-image: url("../images/Projects/p1a.jpeg");
 }
 
 #figure-p2 {
-  background-image: url("../images/Projects/p7a.jpeg");
+  background-image: url("../images/Projects/p2a.jpeg");
 }
 
 #figure-p3 {
-  background-image: url("../images/Projects/steel-framing2.jpeg");
+  background-image: url("../images/Projects/p7a.jpeg");
 }
 
 #figure-p4 {
@@ -52,11 +66,11 @@
 }
 
 #compare-p2 {
-  background-image: url("../images/Projects/p7.jpeg");
+  background-image: url("../images/Projects/p2.jpeg");
 }
 
 #compare-p3 {
-  background-image: url("../images/Projects/drywall.jpeg");
+  background-image: url("../images/Projects/p7.jpeg");
 }
 
 #compare-p4 {
@@ -78,20 +92,18 @@ input.slider {
 }
 
 #slider-p1 {
-  height: 60.7vw;
-  top: -60.7vw;
+  height: 50vw;
+  top: -51vw;
 }
 
 #slider-p2 {
-  height: 51.7vw;
+  height: 50vw;
   top: -51.7vw;
 }
-
 #slider-p3 {
   height: 51.7vw;
   top: -51.7vw;
 }
-
 #slider-p4 {
   height: 51.7vw;
   top: -51.7vw;
@@ -142,4 +154,64 @@ input.slider::-ms-thumb {
 
 input.slider::-ms-tooltip {
   display: none;
+}
+
+@keyframes first {
+  0% {
+    width: 0%;
+  }
+
+  50% {
+    width: 80%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes first {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 80%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .compare::before {
+    background: url(../icons/arrows.svg) no-repeat scroll 0 center transparent;
+    background-size: contain;
+    content: " ";
+    float: right;
+    height: 100%;
+    margin-right: -35.5px;
+    position: relative;
+    top: 0;
+    width: 70px;
+  }
+  .compare {
+    border-right: 0.5px solid rgba(255, 255, 255, 0.7);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .compare::before {
+    background: url(../icons/arrows.svg) no-repeat scroll 0 center transparent;
+    background-size: contain;
+    content: " ";
+    float: right;
+    height: 100%;
+    margin-right: -25.5px;
+    position: relative;
+    top: 0;
+    width: 50px;
+  }
+  .compare {
+    border-right: 0.5px solid rgba(255, 255, 255, 0.7);
+  }
 }

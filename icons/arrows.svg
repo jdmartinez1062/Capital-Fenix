@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="82px" height="43px" viewbox="0 0 82 43" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+      <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect0_dropShadow" />
+      <feOffset dx="0" dy="0" />
+      <feGaussianBlur stdDeviation="5" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.49803922 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect0_dropShadow" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect0_dropShadow" result="shape" />
+    </filter>
+    <path d="M0 5.50003C0 -2.23197 6.76802 10.5 14.5 10.5C22.232 10.5 29.5 -2.232 29.5 5.5C29.5 13.232 22.232 0 14.5 0C6.76802 0 0 13.232 0 5.50003Z" transform="translate(26.5 16)" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <path d="M0 1L20 1" transform="translate(42 20.5)" id="Line" fill="none" fill-rule="evenodd" stroke="#808080" stroke-width="1" stroke-linecap="square" filter="url(#filter_1)" />
+  <path d="M0 1L20 1" transform="translate(42 20.5)" id="Line-2" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="1" stroke-linecap="square" filter="url(#filter_1)" />
+  <path d="M0 1L20 1" transform="translate(19.99997 20.500032)" id="Line-3" fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="1" stroke-linecap="square" filter="url(#filter_1)" />
+  <path d="M3.99999 0L7.99998 8.99998L0 8.99998L3.99999 0Z" transform="matrix(-6.4257586E-09 -1.0000021 1.0000021 -6.4257586E-09 16 25.5)" id="Triangle-4" fill="#FFFFFF" fill-rule="evenodd" stroke="none" filter="url(#filter_1)" />
+  <path d="M3.99999 0L7.99998 8.99998L0 8.99998L3.99999 0Z" transform="matrix(-8.0997204E-08 1.0000021 -1.0000021 -8.0997204E-08 66 17.5)" id="Triangle-5" fill="#FFFFFF" fill-rule="evenodd" stroke="none" filter="url(#filter_1)" />
+  <g id="Ellipse" filter="url(#filter_1)">
+    <g clip-path="url(#clip_1)">
+      <use xlink:href="#path_1" fill="none" stroke="#FFFFFF" stroke-width="2" />
+    </g>
+  </g>
+</svg>
