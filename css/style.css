@@ -707,6 +707,10 @@ footer {
     margin-left: 11px;
   }
 
+  #logo {
+    min-width: 140px;
+  }
+
   .dark-bg .number {
     font: 200 4.5rem "Dosis", sans-serif;
     color: #fff;
@@ -791,6 +795,14 @@ footer {
 @media screen and (max-width: 320px) {
   .dark-bg h1 {
     font-size: 2.5rem;
+  }
+
+  .introduction {
+    width: 80%;
+  }
+
+  #logo {
+    min-width: 120px;
   }
 
   footer .introduction {
