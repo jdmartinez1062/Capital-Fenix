@@ -141,44 +141,10 @@ div.social-media a:first-child {
 #logo {
   position: absolute;
   width: 30%;
+  min-width: 200px;
   top: 50%;
   left: -12%;
   transform: translate(-30%, -50%);
-}
-.vert-stripes {
-  position: absolute;
-  width: 300%;
-  height: 0;
-  left: calc(169 / 1440 * 100%);
-  top: 0;
-  border: 1px solid #fff;
-  transform: translateX(-50%) rotate(90deg);
-  opacity: 0.1;
-  z-index: 0;
-}
-
-.vert-stripes:nth-child(1) {
-  left: calc(359 / 1440 * 100%);
-}
-
-.vert-stripes:nth-child(2) {
-  left: calc(547 / 1440 * 100%);
-}
-
-.vert-stripes:nth-child(3) {
-  left: calc(735 / 1440 * 100%);
-}
-
-.vert-stripes:nth-child(4) {
-  left: calc(923 / 1440 * 100%);
-}
-
-.vert-stripes:nth-child(5) {
-  left: calc(1111 / 1440 * 100%);
-}
-
-.vert-stripes:nth-child(6) {
-  left: calc(1299 / 1440 * 100%);
 }
 
 .left-centered {
@@ -329,6 +295,7 @@ div.square {
 
 div.vector {
   width: 5.6rem;
+  min-width: 5.6rem;
   padding-top: 5.6rem;
   margin: 1.8rem 1.8rem 1.8rem 0;
   background-size: cover;
@@ -468,9 +435,10 @@ footer div.left-centered {
   padding: 5% 0 2% 0;
   left: 11.58696794535%;
   width: 50%;
+  min-width: 900px;
 }
 footer .introduction {
-  width: 100%;
+  width: 80%;
 }
 .contact {
   width: 30%;
@@ -521,12 +489,6 @@ footer {
     width: 80%;
   }
 
-  .main-centered {
-    left: 0;
-    margin: 2.5% 5% 0 5%;
-    width: 80%;
-  }
-
   .left-centered {
     left: 0;
     margin: 0 5%;
@@ -537,17 +499,105 @@ footer {
     left: 0;
     margin: 0 5%;
   }
-
+  #logo {
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: -12%;
+    transform: translate(-30%, -50%);
+  }
+  footer .introduction {
+    width: 100%;
+  }
   footer div.left-centered {
     left: 0;
-    margin: 0 5%;
+    padding: 0 2%;
     width: 100%;
+    min-width: auto;
+    margin-right: 0;
   }
 }
 
 @media screen and (max-width: 1170px) {
   #skills {
     width: fit-content;
+  }
+  .main-centered {
+    left: 15%;
+    margin: 2.5% 5% 0 5%;
+    width: 80%;
+  }
+  #logo {
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: -12%;
+    transform: translate(-30%, -50%);
+  }
+  .left-centered {
+    left: 0;
+    margin: 0 2.5%;
+  }
+
+  .right-centered {
+    left: 0;
+    margin: 0 2.5%;
+  }
+  .dark-bg h1 {
+    font-size: 5rem;
+  }
+  footer div.left-centered {
+    left: 0;
+    padding: 0 2%;
+    width: 100%;
+    min-width: auto;
+    margin-right: 0;
+  }
+  footer .contact h4 {
+    font-size: 1.4rem;
+  }
+  footer div.contact p {
+    font-size: 1rem;
+  }
+
+  div.square-decoration {
+    right: 0;
+    height: 40px;
+    width: 40px;
+  }
+
+  p.project-description {
+    margin: 0.2rem;
+    font-size: 1rem;
+  }
+
+  h2.project {
+    font-size: 1.4rem;
+    margin: 2px 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #capstone-desk {
+    display: none;
+  }
+
+  #capstone-mobile {
+    width: 100%;
+    padding-top: calc(737 / 360 * 100%);
+  }
+
+  div.square {
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    width: 160px;
+    height: 160px;
+    margin: 2px;
+    top: 10%;
+  }
+
+  #skills {
+    width: 350px;
   }
 
   div.sheet-rock {
@@ -591,77 +641,6 @@ footer {
   footer div.left-centered {
     left: 0;
     margin: 0 2.5%;
-    width: 100%;
-  }
-
-  div.square-decoration {
-    right: 0;
-    height: 40px;
-    width: 40px;
-  }
-}
-
-@media screen and (max-width: 720px) {
-  #capstone-desk {
-    display: none;
-  }
-
-  #capstone-mobile {
-    width: 100%;
-    padding-top: calc(737 / 360 * 100%);
-  }
-
-  div.square {
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-    width: 160px;
-    height: 160px;
-    margin: 2px;
-    top: 10%;
-  }
-
-  #skills {
-    width: 350px;
-  }
-
-  div.capstone {
-    flex: 1 1 100%;
-  }
-
-  div.social {
-    flex: 1 1 100%;
-  }
-
-  div.TNW {
-    flex: 1 1 100%;
-  }
-
-  div.tic-tac-toe {
-    flex: 1 1 100%;
-  }
-
-  div.newsweek {
-    flex: 1 1 100%;
-  }
-
-  .main-centered {
-    left: 0;
-    margin: 2.5% 2.5% 0 2.5%;
-  }
-
-  .left-centered {
-    left: 0;
-    margin: 0 2.5%;
-  }
-
-  .right-centered {
-    left: 0;
-    margin: 0 2.5%;
-  }
-
-  footer div.left-centered {
-    left: 0;
-    margin: 0 2.5%;
     padding-bottom: 10px;
     width: 100%;
   }
@@ -681,20 +660,18 @@ footer {
     font: 400 0.6rem "Source Sans 3", sans-serif;
   }
 
-  div.vector {
-    margin: 0.8rem;
-  }
-
   div.about-info {
     margin-left: 0.9rem;
   }
 
   .dark-bg p {
-    font: 400 0.6rem "Source Sans 3", sans-serif;
+    font-size: 0.6rem;
+    line-break: normal;
+    width: fit-content;
   }
 
   .dark-bg h1 {
-    font: 400 2.8rem "Spartan", sans-serif;
+    font-size: 2.8rem;
   }
 
   a.link-icon {
@@ -730,9 +707,23 @@ footer {
 
   .introduction {
     margin: 3.9rem 0 0 0;
+    width: 90%;
     padding: 0;
+    position: relative;
+    min-width: auto;
   }
 
+  .introduction > div {
+    position: relative;
+    left: -3.7rem;
+  }
+  div.vector {
+    min-width: 51.2px;
+
+    width: 3.2rem;
+    padding-top: 3.2rem;
+    margin: 0 0.5rem 0.5rem 0;
+  }
   footer h2 {
     color: #fff;
     font: 400 1.25rem "Source Sans 3", sans-serif;
@@ -772,5 +763,34 @@ footer {
 
   footer.dark-bg {
     padding-bottom: 20px;
+  }
+  footer .introduction {
+    width: 80%;
+  }
+  footer .contact {
+    width: 50%;
+  }
+  footer .contact {
+    width: 70%;
+  }
+  footer .contact > div {
+    margin: 1.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .dark-bg h1 {
+    font-size: 2.5rem;
+  }
+  footer .introduction {
+    width: 60%;
+  }
+  footer .contact h4 {
+    font-size: 1rem;
+  }
+  footer .contact {
+    width: 85%;
+  }
+  footer .contact > div {
+    margin: 1rem;
   }
 }
